@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Home</title>
+</head>
+<body>
+ <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Django App</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="{% url 'about' %}">About</a></li>
+      <li><a href="{% url 'services' %}">Services</a></li>
+    </ul>
+    <form class="navbar-form navbar-left" action="/action_page.php">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+  </div>
+</nav>
+
+ <div class ="container">
+     <h1>{{ city }}</h1>
+     <p>Temp is {{ temperature}} &deg;C</p>
+     <p>Windspeed is {{ windspeed}} kph</p>
+
+
+     {% for name in users %}
+      <p>{{ name }}</p>
+     {% endfor %}
+
+
+ </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
