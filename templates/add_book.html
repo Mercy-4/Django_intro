@@ -7,7 +7,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-sm-4 border rounded p-3">
-                <form action="{% url 'add_book' %}" method="post">
+                <form action="{% url 'add_book' %}" method="post" enctype="multipart/form-data">
                     {% csrf_token %}
 {#                    {{ form }}#}
                         {% bootstrap_form form %}
