@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 """
 URL configuration for myproject project.
 
@@ -43,3 +44,18 @@ urlpatterns = [
 
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+=======
+
+from django.contrib import admin
+from django.urls import path
+
+from myapp import views
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', views.home, name='home'),
+    path('about', views.about, name='about'),
+    path('services', views.services, name='services'),
+    path('students', views.students, name='students'),
+]
+>>>>>>> 354ec5c36c105243fafba5722f18be2f62fbf783

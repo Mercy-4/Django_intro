@@ -1,5 +1,6 @@
 from django.contrib import admin
 
+<<<<<<< HEAD
 from myapp.models import Book
 
 # Register your models here.
@@ -13,3 +14,6 @@ class BookAdmin(admin.ModelAdmin):
     search_fields = ('title', 'year', 'isbn', 'category')
     list_filter = ('category', 'year')
     ordering = ('-title','year')
+=======
+# Register your models here.
+>>>>>>> 354ec5c36c105243fafba5722f18be2f62fbf783

@@ -3,12 +3,28 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+<<<<<<< HEAD
 # Virtual environments
+=======
+# Django specific
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Media and Static assets
+media/
+static_cdn/
+staticfiles/
+
+# Secrets and Environment Variables
+>>>>>>> 354ec5c36c105243fafba5722f18be2f62fbf783
 .env
 .venv
 env/
 venv/
 ENV/
+<<<<<<< HEAD
 env.bak/
 venv.bak/
 
@@ -43,12 +59,20 @@ MANIFEST
 htmlcov/
 .tox/
 .nox/
+=======
+*.env
+
+# Testing and Coverage
+htmlcov/
+.tox/
+>>>>>>> 354ec5c36c105243fafba5722f18be2f62fbf783
 .coverage
 .coverage.*
 .cache
 nosetests.xml
 coverage.xml
 *.cover
+<<<<<<< HEAD
 *.py,cover
 .hypothesis/
 .pytest_cache/
@@ -73,3 +97,19 @@ coverage.xml
 ehthumbs.db
 Thumbs.db
 uploads/
+=======
+.pytest_cache/
+
+# Celery
+celerybeat-schedule
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+.DS_Store
+>>>>>>> 354ec5c36c105243fafba5722f18be2f62fbf783

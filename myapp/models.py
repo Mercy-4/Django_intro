@@ -1,5 +1,6 @@
 from django.db import models
 
+<<<<<<< HEAD
 CATEGORIES = [
     ('Politics', 'Political category'),
     ('Education', 'Education category'),
@@ -28,3 +29,6 @@ class Book(models.Model):
 # python manage.py createsuperuser
 # username - mercy
 # password -12345678
+=======
+# Create your models here.
+>>>>>>> 354ec5c36c105243fafba5722f18be2f62fbf783

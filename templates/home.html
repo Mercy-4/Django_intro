@@ -1,0 +1,17 @@
+{% extends 'master.html' %}
+
+{% block title %} Home {% endblock %}
+{% block content %}
+ <div class ="container">
+     <h1>{{ city }}</h1>
+     <p>Temp is {{ temperature}} &deg;C</p>
+     <p>Windspeed is {{ windspeed}} kph</p>
+
+
+     {% for name in users %}
+      <p>{{ name }}</p>
+     {% endfor %}
+
+
+ </div>
+{% endblock %}

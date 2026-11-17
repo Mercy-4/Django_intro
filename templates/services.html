@@ -1,0 +1,16 @@
+{% extends 'master.html' %}
+{% load static %}
+{% block title %} Services {% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="row">
+      <div class="col-sm-6">
+          <img src="{% static 'images/img_1.jpg' %}" class="img-fluid" alt="">
+      </div>
+      <div class="col-sm-6">
+          <img src="{% static 'images/img_2.jpg' %}" class="img-fluid" alt="">
+      </div>
+  </div>  
+</div>
+{% endblock %}
